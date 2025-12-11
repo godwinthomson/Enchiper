@@ -1,0 +1,66 @@
+.class1 {   
+    color: blue; 
+    font-size: 20px; 
+}
+.class2 {   
+    color: green; 
+    font-size: 18px; 
+}
+.class3 {   
+    color: red; 
+    font-size: 16px; 
+}
+.class4 {   
+    color: purple; 
+    font-size: 14px; 
+}
+.class5 {   
+    color: orange; 
+    font-size: 12px; 
+}
+input[type="text"] {   
+    border: 2px solid rgb(253, 0, 0); 
+    padding: 5px; 
+}
+input[type="submit"] {   
+    background-color: yellow; 
+    border: none; 
+    padding: 10px 15px; 
+}
+input[type="email"] {   
+    border: 2px dashed rgb(0, 0, 255); 
+    padding: 5px;
+}
+input[type="password"] {   
+    border: 2px dotted rgb(0, 255, 0); 
+    padding: 5px;
+
+}
+#para1 {   
+    font-weight: bold; 
+    font-size: small;
+    text-decoration: line-through;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: coral;
+}
+#para2 {   
+    text-decoration: underline; 
+    font-weight: bolder;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    color: teal;
+}
+#para3 {      
+    font-style: italic;
+    font-size: x-large;
+    font-weight: lighter;
+    text-decoration: solid; 
+    color: burlywood;
+}
+h1, h2, p {   
+    margin: 10px 0; 
+    font-family: Arial, sans-serif; 
+    font-size: 16px;
+    font-weight: normal;
+    color: rgb(250, 0, 0);
+}
