@@ -1,0 +1,37 @@
+.block {
+    display: block;
+    width: 100%;
+    background-color: rgb(204, 12, 194);
+    margin-bottom: 10px;
+}
+.inline {
+    display: inline;
+    background-color: rgb(2, 235, 2);
+    margin-right: 10px;
+}
+.inline-block {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    background-color: rgb(38, 7, 237);
+    text-align: center;
+    margin-right: 20px;
+    line-height: 20px;
+}
+.display-none {
+    display: none;
+}
+.dispaly-hidden{
+    visibility: hidden;
+}
+.convert-inline-block {
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(179, 179, 4);
+}
+.convert-block-inline {
+    display: inline;
+    background-color: rgb(255, 132, 0);
+}
