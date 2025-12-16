@@ -1,0 +1,39 @@
+.heading{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(209, 137, 28);
+}
+.s1{
+    margin-left: 90px;
+}
+.s2{
+    display: flex;
+    gap: 10px;
+}
+.middle{
+    margin: 0px;
+}
+.middle img{
+    width: 500px;
+    display: block;
+    margin-left: 500px;
+}
+.container{
+    background-color: aliceblue;
+    
+}
+.maincontent{
+    margin-left:50px;
+    width: 80%;
+}
+.finalpara{
+    justify-content:right;
+}
+.moveside{
+    margin-top: 0px;
+    width: 20%;
+}
+.new{
+    display: flex;
+    margin-left: 50px;
+}
