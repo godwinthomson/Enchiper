@@ -1,0 +1,113 @@
+.body{
+    background-color: rgb(69, 168, 239);
+}
+.main{
+    margin: 300px 800px 800px 700px;
+    border-radius: 10px;
+    background-color: rgb(251, 251, 251);
+}
+.head1{
+    color: aliceblue;
+    background-color: blue;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.first button{
+    margin-left: 190px;
+    background-color: blue;
+    color: aliceblue;
+    height: 40px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: none;
+}
+.second button{
+    background-color: antiquewhite;
+     height: 40px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: none;
+    margin-left: 20px;
+}
+.third button{
+     margin-left: 265px;
+    background-color: blue;
+    color: aliceblue;
+    height: 40px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: none;
+}
+.fourth button{
+     background-color: antiquewhite;
+     height: 40px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: none;
+    margin-left: 20px;
+}
+.fifth button{
+     margin-left: 265px;
+    background-color: blue;
+    color: aliceblue;
+    height: 40px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: none;
+}
+.sixth button{
+     background-color: antiquewhite;
+     height: 40px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: none;
+    margin-left: 20px;
+}
+.seventh button{
+     margin-left: 265px;
+    background-color: blue;
+    color: aliceblue;
+    height: 40px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: none;
+}
+.eighth button{
+    background-color: antiquewhite;
+     height: 40px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: none;
+    margin-left: 20px;
+
+}
+.final{
+    margin-left: 10px;
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 50px;
+
+}
+.final input{
+    border-radius: 20px;
+    height: 25px;
+    width: 250px;
+    border-color: rgb(214, 203, 228);
+}
+.final button{
+    background-color: rgb(19, 64, 226);
+    color: aliceblue;
+    border-radius: 10px;
+    margin-right: 20px;
+    height:30px;
+    width: 60px;
+}

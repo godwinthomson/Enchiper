@@ -1,0 +1,64 @@
+  .body{
+    
+    background-color: aquamarine;
+  }
+  .main{
+    margin: 300px 800px 800px 700px;
+    border-radius: 10px;
+    background-color: rgb(251, 251, 251);
+
+  }
+  .mainhead{
+    margin-top: 40px;
+     color: rgb(47, 84, 232);
+    text-align: center;
+    margin-top: 40px;
+  }
+  .t1{
+    display: flex;
+    margin-left: 20px;
+  }
+  .t1 input{
+    height: 30px;
+    width: 250px;
+  }
+  .t1 button{
+    background-color:rgb(47, 84, 232);
+    color: aliceblue;
+   border-radius: 5px;
+    margin-left: 10px;
+    border: none;
+  }
+  .sub1{
+    justify-content: space-between;
+  }
+  .sub2{
+    text-decoration:line-through;
+  }
+  .ss1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  .ss2{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 40px;
+  }
+  .sub3{
+    justify-content: space-between;
+  }
+  .sub4{
+    text-decoration: none;
+  }
+  .ss3{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  .sub5{
+    justify-content: space-between;
+  }
+  .sub6{
+    text-decoration: line-through;
+  }
