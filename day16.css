@@ -1,0 +1,38 @@
+.main{
+     margin:300px 900px 1000px 700px;
+    border-radius: 10px;
+    background-color: rgb(251, 251, 251);
+}
+div p {
+    background-color: yellowgreen;
+}
+div h1 p{
+    background-color: red;
+}
+.my h1 {
+    background-color:green;
+}
+.my p{
+    background-color:rebeccapurple;
+}
+.my1>p{
+    background-color: chartreuse;
+}
+.you1 + p{
+    background-color: skyblue;
+}
+.you h1{
+    background-color: goldenrod;
+}
+.you1 p{
+    background-color: chocolate;
+}
+.us h1{
+    background-color: darkolivegreen;
+}
+.us1 p{
+    background-color: crimson;
+}
+.us1 ~ p{
+    background-color: burlywood;
+}
