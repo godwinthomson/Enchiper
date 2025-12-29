@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // #Task 1
+        const hour = prompt("Enter hour:");
+        function OnTime(hour){
+            if(hour>=6 && hour<12){
+                alert("Good Morning!");
+            }
+            else if(hour>=12 && hour<18){
+                alert("Good Afternoon!");
+            }
+            else {
+                alert("Good Evening!");
+            }
+        }
+        OnTime(hour);
+        // #Task 2
+        const number = prompt("Enter a number:");
+        if(number>0){
+            alert("The number " + number + " is positive.");
+        }
+        else if(number<0){
+            alert("The number " + number + " is negative.");
+        }
+        else{
+            alert("The number is zero.");
+        }
+        // #Task 3
+        const classes = prompt("Enter total number of classes :");
+        const attended = prompt("Enter number of classes attended:");
+        const attendance = (attended / classes) * 100;
+        if(attendance>=75){
+            alert(" Your attendance is Eligible");
+        }
+        else{
+            alert(" Your attendance is Not Eligible");
+        }
+        // #Task 4
+         let limit=prompt("Enter limit");
+        let large=0;
+        for(let i=1;i<=limit;i++){
+            let n=prompt("Enter number");
+            if(n>large){
+                large=n;
+            }
+        }
+        alert(large);
+        //#Task 5
+        const temperature = prompt("Enter the temperature to be converted:");
+        function celsiusToFahrenheit(celsius){
+            return (celsius * 9/5) + 32;
+        }
+        function fahrenheitToCelsius(fahrenheit){
+            return (fahrenheit - 32) * 5/9;
+        }
+        const choice = prompt("Convert to (1) Fahrenheit or (2) Celsius? Enter 1 or 2:");
+        if(choice=='1'){
+            const fahrenheit = celsiusToFahrenheit(Number(temperature));
+            alert(temperature + "C is " + fahrenheit.toFixed(2) + "F");
+        }
+        else if(choice=='2'){
+            const celsius = fahrenheitToCelsius(Number(temperature));
+            alert(temperature + "F is " + celsius.toFixed(2) + "C");
+        }
+        else{
+            alert("Invalid choice");
+        }
+        // #Task 6
+        const string = prompt("Enter a string:");
+        function countVowels(str){
+            let count=0;
+            for(let i=0;i<str.length;i++){
+                let ch = str[i];
+                if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u' ||
+                   ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U'){
+                    count++;
+                }
+            }
+            console.log("Number of vowels: " + count);
+        }
+        countVowels(string);
+        // #Task 7
+        const n1 = prompt("Enter a number:");
+        function numberPattern(num){
+            for(let i=1;i<=num;i++){
+                let row="";
+                for(let j=1;j<=i;j++){
+                    row+=j;
+        }
+                console.log(row);
+            }
+        }
+        numberPattern(n1);
+        // #Task 8
+        const a = prompt("Enter first number:");
+        const b = prompt("Enter second number:");
+        const c = prompt("Enter third number:");
+        function smallestNumber(a,b,c){
+            let smallest;
+            if(a<=b && a<=c){
+                smallest=a;
+            }
+            else if(b<=a && b<=c){
+                smallest=b;
+            }
+            else{
+                smallest=c;
+            }
+        } 
+        smallestNumber(a,b,c);
+        // #Task 9
+        const item = prompt("Enter number of items :");
+        const price = prompt("Enter price per item :");
+        function BillAmount(item,price){
+            const total = item * price;
+            console.log("Total Bill Amount: " + total);
+        }
+        BillAmount(item,price);
+        // #Task 10
+        const year = prompt("Enter a year:");
+        function isLeapYear(year){
+            if((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)){
+                alert(year + " is a leap year.");
+            }
+            else{
+                alert(year + " is not a leap year.");
+            }
+        }
+        isLeapYear(year);
+        // #Task 11
+        const oddnumber = prompt("Enter a number limit:");
+        function countOddNumbers(n){
+            let count=0;
+            for(let i=1;i<=n;i++){
+                if(i%2!==0){
+                    count++;
+                }
+            }
+            alert("Count of odd numbers between 1 and " + n + " is: " + count);
+        }
+        countOddNumbers(oddnumber);
+        // #Task 12
+        let name=prompt("Enter string");
+        let rev="";
+        function palindrome(name){
+        for(let i=name.length-1;i>=0;i--){
+            rev+=name[i];
+        }
+        if(name==rev){
+            alert("Palindrome");
+        }
+        else{
+            alert("Not palindrome");
+        }
+        }palindrome(name); 
+        // #Task 13
+        const base=prompt("Enter base");
+        const exponent=prompt("Enter exponent");
+        let res=1;
+        for(let i=1;i<=exponent;i++){
+            res*=base;
+        }
+        alert(res);
+        // #Task 14
+        const mark1=Number(prompt("Enter mark1"));
+        const mark2=Number(prompt("Enter mark2"));
+        const mark3=Number(prompt("Enter mark3"));
+        let total=mark1+mark2+mark3;
+        let average=total/3;
+        if(average>=60){
+            alert("Pass");
+        }
+        else{
+            alert("Fail");
+        }
+        // #Task 15
+        let rupees=prompt("Enter rupees");
+        let dollar=rupees/83;
+        alert(dollar);
+        // #Task 16
+        const n=prompt("Enter number");
+        let sum=0;
+        while(n!=0){
+            let y=n%10;
+            sum+=y;
+            n=Math.floor(n/10);
+        }
+        alert(sum);
+        // #Task 18
+        const num=prompt("Enter how many numbers to be averaged");
+        let sum=0;
+        for(let i=1;i<=num;i++){
+            sum+=Number(prompt("Enter number"));
+        }
+        alert(sum/num);
+        // #Task 19
+        const num=prompt("Enter number");
+        if(num%3==0&&num%5==0){
+            alert("Both");
+        }else if(num%3==0){
+            alert("only 3");
+        }else if(num%5==0){
+            alert("only 5");
+        }else{
+            alert("Not both");
+        }
+        // #Task 20
+        let password="123";
+        let attempt=0;
+        while(attempt<3){
+            let pass=prompt("Enter password");
+            if(pass==password){
+            alert("Success");
+            break;
+            }
+            attempt++;
+        }
+        if(attempt==3){
+            alert("Account locked");
+        }
+    </script>
+</body>
+</html>
