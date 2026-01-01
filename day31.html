@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //task-1
+        const username=prompt("Enter name");
+        let format=(username.trim().toLowerCase());
+        alert(format);
+
+        //task-2
+        const email=prompt("Enter email");
+        if(email.includes("@")&&email.includes(".")){
+            alert("Valid");
+        }else{
+            alert("Invalid")
+        }
+
+        //task-3
+        const sen=prompt("Enter sentence");
+        let count=0;
+        for(let i=0;i<sen.length;i++){
+            if(sen[i]!=" "){
+                count++;
+            }
+        }
+        alert(count);
+
+        //task-4
+        const para = prompt("Enter para");
+        let count = para.split(" ");
+        alert(count.length);
+
+        //task-5
+        const str=prompt("Enter string");
+        if(str.length>0){
+            alert("first-"+str[0]+"\nlast-"+str[str.length-1]);
+        }
+
+        //task-6
+        const name=prompt("Enter string");
+        const word=prompt("Enter word");
+        const replace=prompt("Enter replace");
+        alert(name.replace(word,replace));
+
+        //task-7
+        const str=prompt("Enter string");
+        if(str.length<4||str.length>25){
+            alert("Not accept");
+        }
+        else{
+            alert("Accept");
+        }
+
+        //task-8
+        const name=prompt("Enter string");
+        let count=0;
+        for(let i=0;i<name.length;i++){
+            if(name[i]>="A"&&name[i]<="Z"){
+                count++;
+            }
+        }
+        alert(count);
+
+        //task-9
+        const str = prompt("Enter string");
+        let remove = str.replace(/[^a-zA-Z0-9]/g,"");
+        alert(remove);
+
+        //task-10
+        const str=prompt("Enter string");
+        const start=prompt("Enter start");
+        const end=prompt("Enter end");
+        alert(str.startsWith(start)&&str.endsWith(end));
+
+        //task-11
+        const sen=prompt("Enter string");
+        let word=sen.split(" ");
+        let large="";
+        for(let i=0;i<word.length;i++){
+            if(word[i].length>large.length){
+                large=word[i];
+            }
+        }
+        alert(large);
+
+        //task-12
+        const sen = prompt("Enter string");
+        let result = sen.toLowerCase().replace(/\b\w/g, rep => rep.toUpperCase());
+        alert(result);
+
+        //task-13
+        const mobile = prompt("Enter number");
+        let mask = "****" + mobile.slice(-4);
+        alert(mask);
+
+        //task-14
+        const str=prompt("Enter string");
+        let repeat="";
+        for(let i=0;i<str.length;i++){
+            for(let j=i+1;j<str.length;j++){
+                if(str[i]===str[j]&&!repeat.includes(str[i])){
+                    repeat+=str[i]+" ";
+                }
+            }
+        }
+        alert(repeat);
+
+        //task-15
+        const str=prompt("Enter string");
+        let vcount=0;
+        let ccount=0;
+        for(let i=0;i<str.length;i++){
+            if("aeiouAEIOU".includes(str[i])){
+                vcount++;
+            }else{
+                ccount++;
+            }
+        }
+        alert(vcount+","+ccount);
+
+        //task-16
+        const sen=prompt("Enter string");
+        let duplicate=[...new Set(sen.split(" "))];
+        alert(duplicate.join(" "));
+
+        //task-17
+        const s1=prompt("Enter s1").split("").sort().join("");
+        const s2=prompt("Enter s2").split("").sort().join("");
+        if(s1===s2){
+            alert("anagram");
+        }else{
+            alert("not anagram");
+        }
+
+        //task-18
+        const a=prompt("Enter a").trim();
+        const b=prompt("Enter b").trim();
+        if(a===b){
+            alert("Equal");
+        }else{
+            alert("Not equal");
+        }
+
+        //task-19
+        const str = prompt("Enter string");
+        let digit = str.replace(/[^0-9]/g,"");
+        alert(digit);
+
+        //task-20
+        const pass=prompt("Enter password");
+        let hasUpper=false;
+        let hasNumber=false;
+        for(let i=0;i<pass.length;i++){
+            let ch=pass[i];
+            if(ch>="A"&&ch<="Z") hasUpper=true;
+            if(ch>="0"&&ch<="9") hasNumber=true;
+        }
+        if(pass.length>=8&&hasUpper&&hasNumber){
+            alert(" Password is valid");
+        }else{
+            alert("Not a Password");
+        }
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
