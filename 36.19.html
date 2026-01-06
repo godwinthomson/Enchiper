@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .highlight{
+        border: 2px solid blue;
+        background-color: burlywood;
+    }
+</style>
+<body>
+    <label>Events</label>
+    <input type="text" onfocus="addHighlight(this)" onblur="removeHighlight(this)">
+</body>
+<script>
+    function addHighlight(input){
+        input.classList.add("highlight");
+    }
+    function removeHighlight(input){
+        input.classList.remove("highlight");
+    }
+</script>
+</html>

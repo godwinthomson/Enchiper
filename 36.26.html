@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="order">
+        <h1 id="head">Event</h1>
+    </div>
+</body>
+<script>
+    const order = document.getElementById("order");
+    const head = document.getElementById("head");
+    order.addEventListener("click",function(){
+        alert("Inner is clicked");
+    })
+    head.addEventListener("click",function(){
+        alert("outer is clicked");
+    })
+</script>
+</html>

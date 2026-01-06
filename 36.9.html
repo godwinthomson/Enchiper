@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <div id="div" style="height: 100px;width:300px"> Point inside HERE to Check Console</div>
+     <p id="p"></p>
+     <script>
+        const d=document.getElementById("div")
+        const p=document.getElementById("p")
+        d.addEventListener("mousemove",(e)=>{
+             p.innerHTML="x : "+e.offsetX +"y : "+e.offsetY
+        })
+     </script>
+</body>
+</html>

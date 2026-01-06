@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+        <button id="child">
+            Button
+        </button>
+        <div>
+        <script>
+            const p=document.getElementById("parent")
+            const c=document.getElementById("child")
+            parent.addEventListener("click",function(){
+                alert("Button is Clicked")
+            })
+            child.addEventListener("click",function(e){
+                e.stopPropagation();
+                alert("Button is Clicked 'STOP Parent responce event'")
+            })
+        </script>
+</body>
+</html>

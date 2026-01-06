@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="div">
+        <ol>
+            <li>Godwin</li>
+            <li>Suhaas</li>
+            <li>Balaji</li>
+        </ol>
+        <span>CLICK ME</span>
+    </div>
+    <p id="para"></p>
+    </body>
+    <script>
+        document.getElementById("div").addEventListener("click", function(e){
+            document.getElementById("para").innerHTML = e.type + " " + e.target.tagName;
+        })
+    </script>
+</html>

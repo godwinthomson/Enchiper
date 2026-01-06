@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Events</label>
+    <select id="lang" onchange="displayValue()">
+        <option value="">Select</option>
+        <option value="C">C</option>
+        <option value="Html">Html</option>
+        <option value="Css">Css</option>
+    </select>
+    <p id="para"></p>
+</body>
+<script>
+    function displayValue(){
+        const selected = document.getElementById("lang").value;
+        document.getElementById("para").innerText = "Selected value: " +selected;
+    }
+</script>
+</html>

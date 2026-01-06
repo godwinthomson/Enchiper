@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="tooltip">i am Godwin Thomson</div>
+    <button onmouseover="showTooltip()" onmouseout="hideTooltip()">Events</button>
+</body>
+<style>
+    #tooltip{
+        width: 200px;
+        height: 100px;
+        background-color: blue;
+        text-align: center;
+        line-height: 100px;
+    }
+</style>
+<script>
+    function showTooltip(){
+        document.getElementById("tooltip").style.display = "block";
+    }
+    function hideTooltip(){
+        document.getElementById("tooltip").style.display = "none";
+    }
+</script>
+</html>

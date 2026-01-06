@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .msg{
+        color: red;
+        display: none;
+    }
+</style>
+<body>
+    <label>Events</label>
+    <input type="text" onfocus="showMessage()" onblur="hideMessage()">
+    <p id="msg">i am Godwin thomson</p>
+</body>
+<script>
+    function showMessage(){
+        document.getElementById("msg").style.display = "block";
+    }
+    function hideMessage(){
+        document.getElementById("msg").style.display = "none";
+    }
+</script>
+</html>
