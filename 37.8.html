@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="startEvent()">Start</button>
+    <button onclick="stopEvent()">Stop</button>
+    <p id="para">0</p>
+</body>
+<script>
+    let count=0;
+    let interval;
+    function startEvent(){
+        interval=setInterval(()=>{
+            count++;
+            document.getElementById("para").innerText=count;
+        },1000);
+    }
+    function stopEvent(){
+        clearInterval(interval);
+    }
+</script>
+</html>
