@@ -1,0 +1,93 @@
+body{
+    height: 600px;
+    background: #eaf5fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 420px;
+    background: #ffffff;
+    padding: 25px 25px 15px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+.container h1{
+    text-align: center;
+    color: #1f6fe5;
+    margin-bottom: 20px;
+}
+.a1{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.a1 input{
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 2px solid #1f6fe5;
+    outline: none;
+    font-size: 14px;
+}
+.a1 button{
+    padding: 10px 16px;
+    background: #1f6fe5;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.a3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px dashed #dcdcdc;
+}
+.a4 input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    accent-color: #3cb371; 
+    cursor: pointer;
+}
+.a4 input[type="checkbox"]:checked + span{
+    text-decoration: line-through;
+    color: #999;
+}
+.check{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid #3cb371;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3cb371;
+    font-size: 14px;
+    font-weight: bold;
+}
+.check.box{
+    border-radius: 6px;
+    border: 2px solid #1f6fe5;
+    color: #3cb371;
+}
+.task span{
+    font-size: 14px;
+    color: #555;
+}
+.done{
+    text-decoration: line-through;
+    color: #999;
+}
+.remove{
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+}

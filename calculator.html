@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+   <div class="calc">
+   <input type="text" placeholder="type operations" id="input">
+   <div class="btn">
+      <button style="background-color: rgb(248, 248, 36);"><b>+</b></button>
+      <button style="background-color: rgb(248, 248, 36);"><b>-</b></button>
+      <button style="background-color: rgb(248, 248, 36);"><b>*</b></button>
+      <button style="background-color: rgb(248, 248, 36);"><b>/</b></button>
+      <button style="background-color: rgb(36, 146, 248);"><b>0</b></button>
+      <button style="background-color: rgb(36, 146, 248);"><b>9</b></button>
+      <button style="background-color: rgb(36, 146, 248);"><b>8</b></button>
+      <button style="background-color: rgb(36, 146, 248);"><b>7</b></button>
+      <button style="background-color: rgb(36, 146, 248);"><b>6</b></button>
+      <button style="background-color: rgb(36, 146, 248);"><b>5</b></button>
+      <button style="background-color: rgb(36, 146, 248);"><b>4</b></button>
+      <button style="background-color: rgb(36, 146, 248);"><b>3</b></button>
+      <button style="background-color: rgb(36, 146, 248);"><b>2</b></button>
+      <button style="background-color: rgb(36, 146, 248);"><b>1</b></button>
+      <button style="background-color: rgb(36, 146, 248);"><b>.</b></button>
+      <button class="new" style="background-color: rgb(248, 36, 36);"><b>C</b></button>
+      <button class="equal" style="background-color: rgb(7, 167, 7);"><b>=</b></button>
+   </div>
+   </div>
+</body>
+<script>
+   const display = document.getElementById("input");
+  const button = document.querySelector(".btn");
+
+  button.addEventListener("click", (bt) => {
+    const value = bt.target.innerText;
+
+    if (value === "C") {
+      display.value = "";
+      alert("value is cleared")
+    } 
+    else if (value === "=") {
+      display.value = eval(display.value);
+      alert(display.value)
+    } 
+    else {
+      display.value += value;
+    }
+  });
+</script>
+</html>

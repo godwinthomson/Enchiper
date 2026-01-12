@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="taskmanager.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Task Manager</title>
+</head>
+<body>
+<div class="container">
+    <h1>Task Manager</h1>
+    <div class="a1">
+        <input type="text" id="Input" placeholder="Enter the Task">
+        <button onclick="task()">Add Task</button>
+    </div>
+    <div id="a2">
+    <div class="a3">
+    <div class="a4">
+        <input type="checkbox">
+        <span>Task A</span>
+    </div>
+    <button class="remove">Remove</button>
+</div>
+
+<div class="a3">
+    <div class="a4">
+        <input type="checkbox" checked>
+        <span>Task B</span>
+    </div>
+    <button class="remove">Remove</button>
+</div>
+
+<div class="a3">
+    <div class="a4">
+        <input type="checkbox">
+        <span>Task C</span>
+    </div>
+    <button class="remove">Remove</button>
+</div>
+</div>
+</div>
+
+</body>
+<script>
+function task(){
+    let input=document.getElementById("Input");
+    let text=input.value.trim();
+    if(text===""){
+        alert("Enter the task");
+        return;
+    }
+    let a=document.getElementById("List");
+    let b=document.createElement("div");
+    b.className="task";
+    b.innerHTML=`
+        <div class="left">
+        <input type="checkbox" onchange="toggleTask(this)">
+        <span>${text}</span>
+        </div>
+        <button class="remove" onclick="removeTask(this)">Remove</button>
+        `;
+    a.appendChild(b);
+    input.value="";
+}
+function removeTask(btn){
+    btn.parentElement.remove();
+}
+function toggleTask(checkbox){
+    let c=checkbox.nextElementSibling;
+    c.classList.toggle("done");
+}
+</script>
+</html>
+</body>
+</html>
