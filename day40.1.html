@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>User Ticket Details</title>
+
+<style>
+    h2{
+        text-align: center;
+        margin-bottom: 20px;
+        }
+    table{
+        width: 80%;
+        margin: auto;
+        border-collapse: collapse;
+        background-color: white;
+        }
+    th, td{
+        border: 1px solid #444;
+        padding: 10px;
+        text-align: center;
+        }
+    th{
+        font-weight: bold;
+        }
+    button{
+        border-radius: 5px;
+        background-color: brown;
+        }
+</style>
+</head>
+<body>
+<h2>Ticket Details</h2>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Email</th>
+        <th>DOB</th>
+        <th>Gender</th>
+        <th>Class</th>
+        <th>Address</th>
+    </tr>
+    <tr>
+        <td id="name"></td>
+        <td id="age"></td>
+        <td id="email"></td>
+        <td id="dob"></td>
+        <td id="gender"></td>
+        <td id="class"></td>
+        <td id="address"></td>
+    </tr>
+</table><br><br>
+<button onclick="bookTicket()">Book Your Ticket</button>
+<script>
+document.getElementById("name").textContent = localStorage.getItem("name");
+document.getElementById("age").textContent = localStorage.getItem("age");
+document.getElementById("email").textContent = localStorage.getItem("email");
+document.getElementById("dob").textContent = localStorage.getItem("dob");
+document.getElementById("gender").textContent = localStorage.getItem("gender");
+document.getElementById("class").textContent = localStorage.getItem("class");
+document.getElementById("address").textContent = localStorage.getItem("address");
+</script>
+</body>
+</html>

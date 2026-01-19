@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{
+    justify-items: center;
+    margin-top: 300px;
+    background-image:url("https://www.shutterstock.com/image-vector/white-plane-blue-sky-flying-600nw-2355688291.jpg");
+    background-size: cover;
+}
+.h{
+    width: 600px;
+    height: 800px;
+    background-color: rgb(131, 118, 97);
+    text-align: center;
+    border-radius: 10px;
+    background-image:url("https://img.freepik.com/free-photo/white-toy-plane-sky_23-2148256033.jpg?semt=ais_hybrid&w=740&q=80");
+}
+.h input, select, textarea{
+    margin-top: 10px;
+    border-radius: 5px;
+    height: 25px;
+    width: 300px;
+    padding-left: 5px;
+}
+.h h1{
+   color: rgb(123, 0, 80);
+}
+.s1{
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 8px;
+}
+.s1 label {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+}
+input[type="checkbox"] {
+    margin-top: 5px;
+    width: 18px;
+    height: 18px;
+    margin-left: 25px;
+}
+p {
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+}
+.h button{
+    background-color: rgb(123, 0, 80);
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    margin-top: 30px;
+}
+.gender{
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+textarea{
+    height: 60px;
+}
+</style>
+<body>
+   <div class="h">
+    <h1 class="head">Ticket Details</h1>
+    <input type="text" placeholder="Enter the Name" id="d1"><br><br>
+    <input type="password" placeholder="Enter the Password" id="d7">
+    <input type="number" placeholder="Enter the Age" id="d2"><br><br>
+    <input type="text" placeholder="Enter your Email" id="d3"><br><br>
+    <input type="date" placeholder="D.O.B" id="d4"><br><br>
+    <div class="gender">
+    <p><b>Gender:</b></p>
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+    </div>
+    <select  id="d6">
+    <option value="">Select Class</option>
+    <option>Economy</option>
+    <option>Business</option>
+    <option>First Class</option>
+    </select>
+    <textarea id="d8" placeholder="Enter the Address" style="margin-top:20px; width:300px; height:60px; border-radius:5px;"></textarea>
+    <div class="s1">
+    <label>
+    <input type="checkbox" id="d5">
+    <p>Proceed for login?</p>
+    </label>
+    </div>
+    <button onclick="nextPage()" id="btn">LOGIN</button>
+   </div> 
+</body>
+<script>
+    function nextPage() {
+    const name = document.getElementById("d1").value;
+    const age = document.getElementById("d2").value;
+    const email = document.getElementById("d3").value;
+    const dob = document.getElementById("d4").value;
+    const checkbox = document.getElementById("d5");
+    const travelClass = document.getElementById("d6").value;
+    const password = document.getElementById("d7").value;
+    const address = document.getElementById("d8").value;
+    let genderType= "";
+    const genders = document.getElementsByName("gender");
+    for (let g of genders) {
+        if (g.checked) {
+            genderType = g.value;
+        }
+    }
+    if (name===""||age===""||password===""||email===""||dob===""||genderType===""||travelClass===""||address==="") {
+        alert("Please fill all the above datas");
+        return;
+    }
+    if (!checkbox.checked) {
+        alert("Please accept to proceed for login");
+        return;
+    }
+    if(password.length < 6) {
+        alert("Password must be at least 6 characters");
+        return;
+    }
+    localStorage.setItem("name", name);
+    localStorage.setItem("age", age);
+    localStorage.setItem("email", email);
+    localStorage.setItem("dob", dob);
+    localStorage.setItem("gender", genderType);
+    localStorage.setItem("class", travelClass);
+    localStorage.setItem("address", address);
+    window.location.href="day40.1.html";
+}
+</script>
+</html>
