@@ -1,0 +1,51 @@
+body{
+  background-color: rgb(11, 32, 219);
+}
+.con{
+  background-color: rgb(220, 230, 230);
+  height: 450px;
+  max-width: 330px;
+  margin: 200px auto;
+  text-align: center;
+  border-radius: 20px;
+}
+.sub{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  padding: 10px;
+  justify-content: space-evenly;
+}
+.b1{
+  background-color: rgb(229, 114, 7);
+}
+.b2{
+  background-color: rgb(189, 24, 24);
+  color: white;
+}
+input{
+  width: 80%;
+  height: 40px;
+  font-size: 18px;
+  margin: 25px 0;
+  padding: 5px;
+  text-align: right;
+  border: 0px;
+  border-radius: 5px;
+}
+.l{
+  text-align: left;
+  padding: 25px;
+}
+.b3{
+  background-color: rgb(1, 130, 72);
+  width: 100px;
+}
+button{
+  background-color: rgb(6, 54, 226);
+  border-radius: 10px;
+  border: none;
+  width: 50px;
+  height: 40px;
+  cursor: pointer;
+}
