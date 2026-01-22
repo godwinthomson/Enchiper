@@ -15,7 +15,7 @@ function App() {
       }
     } 
     else {
-      setValue(value + t);
+      setValue(value + t);   
     }
   };
   return (
