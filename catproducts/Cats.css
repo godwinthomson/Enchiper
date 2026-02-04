@@ -1,0 +1,32 @@
+body{
+   background-image: url("./bg-image/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.cattypes-container {
+  padding: 40px;
+}
+.cattypes-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+
+.cattypes-item {
+  width: 320px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 15px;
+  background-color: #fb891f;
+}
+.cattypes-item img {
+  width: 100%;
+  height: 200px;    
+  object-fit: contain;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}

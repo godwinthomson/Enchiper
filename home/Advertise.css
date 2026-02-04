@@ -1,0 +1,22 @@
+.advertise-container {
+    margin: 20px;
+    padding: 40px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+.advertise-container h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+.advertise-container p {
+    font-size: 16px;
+    color: #666;
+}
+.advertise-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+}
